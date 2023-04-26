@@ -1,6 +1,8 @@
 
 import './App.css';
 import Evento  from './components/Evento';
+import Form from './components/Form';
+import Condicional from './components/Condicional';
 // import HelloWolrd from './components/HelloWolrd'
 // import SayMyName from './components/SayMyName';
 // import Pessoa from './components/Pessoa';
@@ -9,11 +11,11 @@ import Evento  from './components/Evento';
 
 function App() {
 
-    
+
     return (
         <div className='App'>
-            <Evento numero="1"/>
-            <Evento numero="2"/>
+            <h1>Renderização Condicional</h1>
+            <Condicional/>
         </div>
     );
 }
@@ -30,3 +32,5 @@ export default App;
             // <SayMyName nome={nome} />
             // <Pessoa nome='Tiago' idade='33' profissao='Engenheiro de Software' foto='https://via.placeholder.com/150' />
             // <List/>
+// {/* <Evento />
+// <Form/> */}
