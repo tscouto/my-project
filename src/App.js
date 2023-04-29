@@ -1,6 +1,6 @@
-
-import { useState } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { useState } from 'react';
+// import './App.css';
 //import Evento  from './components/Evento';
 //import Form from './components/Form';
 //import Condicional from './components/Condicional';
@@ -10,25 +10,25 @@ import './App.css';
 // import Pessoa from './components/Pessoa';
 // import List from './components/List';
 // import Frase from './components/Frase';
-import SeuNome from './components/SeuNome';
-import Saudacao from './components/Saudacao';
+// import SeuNome from './components/SeuNome';
+// import Saudacao from './components/Saudacao';
 
 function App() {
-    const [nome, setNome] = useState()
-    //const meusItens = ['React', 'Vue', 'Angular']
 
     return (
-        <div className='App'>
-            <h1>Renderização de Lista</h1>
-            <SeuNome setNome={setNome} />
-            <Saudacao nome={nome}/>
+        <Router>
+            <ul>
+                <li><Link to='/'>Home</Link></li>
 
-        </div>
+            </ul>
+        </Router>
     );
 }
 
 export default App;
 
+  //const [nome, setNome] = useState()
+    //const meusItens = ['React', 'Vue', 'Angular']
 
 //  <Frase />
             // <Frase />
@@ -44,3 +44,6 @@ export default App;
 //  <Condicional/>
 //<Outralista itens={meusItens}/>
 //<Outralista itens={[]}/>
+//<h1>Renderização de Lista</h1>
+//<SeuNome setNome={setNome} />
+//<Saudacao nome={nome}/>
